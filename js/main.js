@@ -75,19 +75,6 @@ const tree = new TreePointCloud({
 
 scene.add(tree.points);
 
-// Create radial menu
-const radialMenu = new RadialMenu({
-    innerRadius: 40,
-    outerRadius: 75,
-    fontColor: '#ffffff',
-    highlightColor: '#ff0000',
-    letters: "homara",
-    highlightedText: "twenty minutes and twenty seconds",
-    rotationSpeed: 0.05,
-    cameraController: cameraController,
-    tree: tree,
-    camera: camera
-});
 
 // Set callback to fade in the scene when loading completes
 loadingAnimation.setOnComplete(() => {
@@ -116,11 +103,6 @@ function animate() {
         tree.update(camera);
     }
     
-    // Update radial menu with camera reference
-    radialMenu.update(camera);
-    
-    cameraController.update();
-    renderer.render(scene, camera);
 }
 
 animate();

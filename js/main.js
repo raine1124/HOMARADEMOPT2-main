@@ -80,12 +80,7 @@ scene.add(tree.points);
 loadingAnimation.setOnComplete(() => {
     // Fade in the scene
     sceneContainer.style.opacity = '1';
-    
-    // Only show the menu after the loading is completely done
-    // This ensures it won't appear during the animation
-    setTimeout(() => {
-        radialMenu.show();
-    }, 1000);
+
     
     // Show controls overlay after the scene fades in
     setTimeout(() => {

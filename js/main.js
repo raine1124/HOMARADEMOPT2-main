@@ -4,7 +4,6 @@ import { CameraController } from './CameraController.js';
 import { LoadingAnimation } from './loading.js';
 import { Environment } from './Environment.js';
 import { ControlsOverlay } from './controls-overlay.js';
-import { RadialMenu } from './RadialMenu.js';
 
 // Initialize loading animation
 const loadingAnimation = new LoadingAnimation();
